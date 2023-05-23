@@ -1,0 +1,19 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "\"todolist using react on next\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rnZolo/React-TodoList.git"
+  },
+  "author": "Renz Sagge",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rnZolo/React-TodoList/issues"
+  },
+  "homepage": "https://github.com/rnZolo/React-TodoList#readme"
+}
