@@ -20,6 +20,15 @@ body {
   color: var(--main-text-color);
 }
 
-* {
-  outline: 1px dashed red;
+.oval-bg {
+  box-shadow: 1px -11px 1px 10px rgb(39, 47, 78);
 }
+
+.main-interface {
+  box-shadow: rgb(65, 79, 136) 0px 5px, rgb(65, 79, 136, 0.3) 0px 10px, rgb(65, 79, 136, 0.2) 0px 15px, rgb(65, 79, 136, 0.1) 0px 20px, rgb(65, 79, 136, 0.05) 0px 25px;
+  /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
+}
+
+/* * {
+  outline: 1px dashed red;
+} */
