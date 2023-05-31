@@ -1,9 +1,27 @@
-import { React } from "react";
+import { React, useState, useClient } from "react";
+import DarkModeBtn from "../DarkModeBtn";
+import Swiper from "swiper/bundle";
 
-function Hero() {
+function DarkModeBtn(props) {
+    const [mode, setMode] = useState("tea")
+    const page = document.getElementsByTagName('html')
+    page.classList.add(mode)
+
+    function changeTheme() {
+        setMode(props.theme)
+        page.classList.replace(props.theme)
+    }
 
     return (
+        <>
+            <button type='button' name='mode-btn' value='theme' onClick={changeTheme()}> change mode</button>
+        </>)
+}
+
+function Hero() {
+    return (
         <section className="banner-section w-[80%] h-fit flex flex-col gap-[20px] max-w-[1200px]">
+            <DarkModeBtn />
             <div className="banner-h-products upper  h-[400px] flex justify-center items-center">
                 this will contain a horizontal slider of milktea banner
             </div>
@@ -26,4 +44,4 @@ function Hero() {
     )
 }
 
-export { Hero };
+export default useClient(Hero)
